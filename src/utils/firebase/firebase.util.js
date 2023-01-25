@@ -28,7 +28,7 @@ const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
   prompt: 'select_account',
 });
-
+/*The auth method doesn't have a new keyword attached when creating it and the GoogleProvider does, this because we can have multiple instances of the provider and set different parameters for each of them while we have a singleton of the authentication method because ideally the authentication method should always be the same across the entire application */
 export const auth = getAuth();
 export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
