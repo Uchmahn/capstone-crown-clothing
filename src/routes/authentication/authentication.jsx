@@ -10,7 +10,7 @@ import {
 // import { async } from '@firebase/util';
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
 import SignInForm from '../../components/sign-in-form/sign-in-form.component';
-import './authentication.styles.scss';
+import AuthenticationContainer from './authentication.styles.jsx';
 
 const Authentication = () => {
   // Sign In With Redirect
@@ -26,7 +26,7 @@ const Authentication = () => {
   // }, []);
 
   return (
-    <div className="authentication-container">
+    <AuthenticationContainer>
       {/*
       Sign In wiith redirect example
       <button onClick={signInWithGoogleRedirect}>
@@ -35,7 +35,7 @@ const Authentication = () => {
 
       <SignInForm />
       <SignUpForm />
-    </div>
+    </AuthenticationContainer>
   );
 };
 
