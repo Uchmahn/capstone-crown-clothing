@@ -6,7 +6,10 @@ import {
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
-import thunk from 'redux-thunk';
+import createSagaMiddleware from 'redux-saga';
+// import thunk from 'redux-thunk';
+
+import { rootSaga } from './root-saga';
 
 import { rootReducer } from './root-reducer';
 
@@ -16,12 +19,15 @@ const persistConfig = {
   whitelist: ['cart'],
 };
 
+const sagaMiddleware = createSagaMiddleware();
+
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 // process.env.NODE_ENV helps our appliction determine whether it's in development or production
 const middleWares = [
   process.env.NODE_ENV !== 'production' && logger,
-  thunk,
+  // thunk,
+  sagaMiddleware,
 ].filter(Boolean);
 
 const composedEnhancer =
@@ -37,5 +43,7 @@ export const store = createStore(
   undefined,
   composedEnhancers
 );
+
+sagaMiddleware.run(rootSaga);
 
 export const persistor = persistStore(store);

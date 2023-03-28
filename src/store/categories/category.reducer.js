@@ -13,8 +13,8 @@ export const categoriesReducer = (
   const { type, payload } = action;
 
   switch (type) {
-    case CATEGORIES_ACTION_TYPES.SET_CATEGORIES:
-      return { ...state, categories: payload };
+    // case CATEGORIES_ACTION_TYPES.SET_CATEGORIES:
+    //   return { ...state, categories: payload };
 
     case CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START:
       return { ...state, isLoading: true };
