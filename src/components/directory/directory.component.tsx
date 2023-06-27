@@ -44,7 +44,7 @@ const categories: DirectoryCategory[] = [
 
 const Directory = () => {
   return (
-    <DirectoryContainer className="directory-container">
+    <DirectoryContainer>
       {categories.map(category => {
         return <DirectoryItem key={category.id} category={category} />;
       })}
