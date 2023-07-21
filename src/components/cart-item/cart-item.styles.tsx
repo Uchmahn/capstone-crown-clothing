@@ -19,7 +19,7 @@ export const CartItemContainer = styled.div`
     padding: 1rem 2rem;
 
     .name {
-      font-size: 16rem;
+      font-size: 1.6rem;
     }
   }
 `;
