@@ -2,15 +2,9 @@ import styled from 'styled-components';
 
 const AuthenticationContainer = styled.div`
   display: flex;
-  width: 900px;
+  width: 90rem;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 3rem auto;
 `;
 
-// .authentication-container {
-//   display: flex;
-//   width: 900px;
-//   justify-content: space-between;
-//   margin: 30px auto;
-// }
 export default AuthenticationContainer;

@@ -1,87 +1,43 @@
 import styled from 'styled-components';
 
 export const CheckoutItemContainer = styled.div`
-   {
-    width: 100%;
-    display: flex;
-    min-height: 100px;
-    border-bottom: 1px solid darkgrey;
-    padding: 15px 0;
-    font-size: 20px;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  min-height: 10rem;
+  border-bottom: 0.1rem solid darkgrey;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  align-items: center;
 
-    .image-container {
-      width: 23%;
-      padding-right: 15px;
+  .image-container {
+    width: 23%;
+    padding-right: 1.5rem;
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .name,
-    .quantity,
-    .price {
-      width: 23%;
-    }
-
-    .quantity {
-      display: flex;
-
-      .arrow {
-        cursor: pointer;
-      }
-
-      .value {
-        margin: 0 10px;
-      }
-    }
-
-    .remove-button {
-      padding-left: 12px;
-      cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
+  .name,
+  .quantity,
+  .price {
+    width: 23%;
+  }
+
+  .quantity {
+    display: flex;
+
+    .arrow {
+      cursor: pointer;
+    }
+
+    .value {
+      margin: 0 1rem;
+    }
+  }
+
+  .remove-button {
+    padding-left: 1.2rem;
+    cursor: pointer;
+  }
 `;
-
-// .checkout-item-container {
-//   width: 100%;
-//   display: flex;
-//   min-height: 100px;
-//   border-bottom: 1px solid darkgrey;
-//   padding: 15px 0;
-//   font-size: 20px;
-//   align-items: center;
-
-//   .image-container {
-//     width: 23%;
-//     padding-right: 15px;
-
-//     img {
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-//   .name,
-//   .quantity,
-//   .price {
-//     width: 23%;
-//   }
-
-//   .quantity {
-//     display: flex;
-
-//     .arrow {
-//       cursor: pointer;
-//     }
-
-//     .value {
-//       margin: 0 10px;
-//     }
-//   }
-
-//   .remove-button {
-//     padding-left: 12px;
-//     cursor: pointer;
-//   }
-// }

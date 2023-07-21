@@ -10,13 +10,13 @@ export const BackgroundImage = styled.div`
 `;
 
 export const Body = styled.div`
-  height: 90px;
-  padding: 0 25px;
+  height: 9rem;
+  padding: 0 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   background-color: white;
   opacity: 0.7;
   position: absolute;
@@ -26,27 +26,27 @@ export const Body = styled.div`
 
   h2 {
     font-weight: bold;
-    margin: 0 6px 0;
-    font-size: 22px;
+    margin: 0 0.6rem 0;
+    font-size: 2.2rem;
     color: #4a4a4a;
     text-transform: uppercase;
   }
 
   p {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 `;
 
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  height: 24rem;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
+  border: 0.1rem solid black;
+  margin: 0 0.75rem 1.5rem;
   overflow: hidden;
   position: relative;
 
@@ -64,87 +64,14 @@ export const DirectoryItemContainer = styled.div`
   }
 
   &:first-child {
-    margin-right: 7.5px;
+    margin-right: 0.75rem;
   }
 
   &:last-child {
-    margin-left: 7.5px;
+    margin-left: 0.75rem;
   }
 
-  @media screen and (max-width: 800px) {
-    height: 200px;
+  @media screen and (max-width: 50em) {
+    height: 20rem;
   }
 `;
-
-// .directory-item-container {
-//   min-width: 30%;
-//   height: 240px;
-//   flex: 1 1 auto;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border: 1px solid black;
-//   margin: 0 7.5px 15px;
-//   overflow: hidden;
-//   position: relative;
-
-//   &:hover {
-//     cursor: pointer;
-
-//     & .background-image {
-//       transform: scale(1.1);
-//       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-//     }
-
-//     & .body {
-//       opacity: 0.9;
-//     }
-//   }
-
-//   &.large {
-//     height: 380px;
-//   }
-
-//   &:first-child {
-//     margin-right: 7.5px;
-//   }
-
-//   &:last-child {
-//     margin-left: 7.5px;
-//   }
-
-//   .background-image {
-//     width: 100%;
-//     height: 100%;
-//     background-size: cover;
-//     background-position: center;
-//   }
-
-//   .body {
-//     height: 90px;
-//     padding: 0 25px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     border: 1px solid black;
-//     background-color: white;
-//     opacity: 0.7;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-
-//     h2 {
-//       font-weight: bold;
-//       margin: 0 6px 0;
-//       font-size: 22px;
-//       color: #4a4a4a;
-//     }
-
-//     p {
-//       font-weight: lighter;
-//       font-size: 16px;
-//     }
-//   }
-// }

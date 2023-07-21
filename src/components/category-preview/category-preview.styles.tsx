@@ -4,49 +4,31 @@ import styled from 'styled-components';
 export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     align-items: center;
   }
 `;
 
 export const Title = styled(Link)`
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
   cursor: pointer;
 `;
 
 export const Preview = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
+  column-gap: 2rem;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 50em) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 25px;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2.5rem;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 25em) {
     grid-template-columns: 1fr;
-    grid-row-gap: 25px;
+    grid-row-gap: 2.5rem;
   }
 `;
-
-// .category-preview-container {
-//   display: flex;
-//   flex-direction: column;
-//   margin-bottom: 30px;
-
-//   .title {
-//     font-size: 28px;
-//     margin-bottom: 25px;
-//     cursor: pointer;
-//   }
-
-//   .preview {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     column-gap: 20px;
-//   }
-// }

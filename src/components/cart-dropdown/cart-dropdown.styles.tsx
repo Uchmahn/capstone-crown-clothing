@@ -7,33 +7,31 @@ import {
 } from '../button/button.styles';
 
 export const CartDropdownContainer = styled.div`
-   {
-    position: absolute;
-    width: 240px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 1px solid black;
-    background-color: white;
-    top: 90px;
-    right: 40px;
-    z-index: 5;
+  position: absolute;
+  width: 24rem;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: white;
+  top: 9rem;
+  right: 4rem;
+  z-index: 5;
 
-    ${BaseButton},
-    ${GoogleSignInButton},
+  ${BaseButton},
+  ${GoogleSignInButton},
     ${InvertedButton} {
-      margin-top: auto;
-      //My addition start
-      font-size: 12px;
-      //My addition end
-    }
+    margin-top: auto;
+    //My addition start
+    font-size: 1.2rem;
+    //My addition end
   }
 `;
 
 export const EmptyMessage = styled.span`
-  font-size: 18px;
-  margin: 50px auto;
+  font-size: 1.8rem;
+  margin: 5rem auto;
 `;
 
 export const CartItems = styled.div`
@@ -45,46 +43,3 @@ export const CartItems = styled.div`
   flex-direction: column;
   overflow: auto;
 `;
-
-// export const CheckoutButton = styled(Button)`
-//   margin-top: auto;
-//   //My addition start
-//   font-size: 12px;
-//   //My addition end
-// `;
-
-// .cart-dropdown-container {
-//   position: absolute;
-//   width: 240px;
-//   height: 340px;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 20px;
-//   border: 1px solid black;
-//   background-color: white;
-//   top: 90px;
-//   right: 40px;
-//   z-index: 5;
-
-//   .empty-message {
-//     font-size: 18px;
-//     margin: 50px auto;
-//   }
-
-// .cart-items {
-//   //My addition start
-//   // height: 240px;
-//   height: 100%;
-//   //My addition end
-//   display: flex;
-//   flex-direction: column;
-//   overflow: scroll;
-// }
-
-//   button {
-//     margin-top: auto;
-//     //My addition start
-//     font-size: 12px;
-//     //My addition end
-//   }
-// }

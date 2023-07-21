@@ -4,7 +4,7 @@ export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 35rem;
   align-items: center;
   position: relative;
 
@@ -12,14 +12,14 @@ export const ProductCardContainer = styled.div`
     width: 100%;
     height: 95%;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
   }
 
   button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
-    top: 255px;
+    top: 25.5rem;
     display: none;
     // my additions (start)
     text-align: center;
@@ -37,14 +37,15 @@ export const ProductCardContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 800px) {
+  // Below 800px
+  @media screen and (max-width: 50em) {
     width: 40vw;
 
     button {
       display: block;
       opacity: 0.9;
       min-width: unset;
-      padding: 0 10px;
+      padding: 0 1rem;
 
       &:hover {
         img {
@@ -58,7 +59,8 @@ export const ProductCardContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 400px) {
+  // Below 400px
+  @media screen and (max-width: 25em) {
     width: 80vw;
   }
 `;
@@ -68,69 +70,13 @@ export const Footer = styled.div`
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.8rem;
 `;
 
 export const Name = styled.span`
   width: 90%;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 `;
 export const Price = styled.span`
   width: 10%;
 `;
-
-// .product-card-container {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   height: 350px;
-//   align-items: center;
-//   position: relative;
-
-//   img {
-//     width: 100%;
-//     height: 95%;
-//     object-fit: cover;
-//     margin-bottom: 5px;
-//   }
-
-//   button {
-//     width: 80%;
-//     opacity: 0.7;
-//     position: absolute;
-//     top: 255px;
-//     display: none;
-//     // my additions (start)
-//     text-align: center;
-//     font-size: small;
-//     // (end)
-//   }
-
-//   &:hover {
-//     img {
-//       opacity: 0.8;
-//     }
-
-//     button {
-//       opacity: 0.85;
-//       display: flex;
-//     }
-//   }
-
-//   .footer {
-//     width: 100%;
-//     height: 5%;
-//     display: flex;
-//     justify-content: space-between;
-//     font-size: 18px;
-
-//     .name {
-//       width: 90%;
-//       margin-bottom: 15px;
-//     }
-
-//     .price {
-//       width: 10%;
-//     }
-//   }
-// }
