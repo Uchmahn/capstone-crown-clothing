@@ -10,7 +10,7 @@ import {
   selectCategoriesIsLoading,
 } from '../../store/categories/category.selector';
 
-import { CategoryContainer, Title } from './category.styles';
+import { CategoryContainer, Title, CategoryBox } from './category.styles';
 
 type CategoryRouteParams = {
   category: string;
@@ -35,12 +35,12 @@ const Category = () => {
         <Spinner />
       ) : (
         <CategoryContainer>
-          <div className="category-container">
+          <CategoryBox>
             {products &&
               products.map(product => (
                 <ProductCard key={product.id} product={product} />
               ))}
-          </div>
+          </CategoryBox>
         </CategoryContainer>
       )}
     </Fragment>

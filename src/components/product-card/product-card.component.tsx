@@ -30,8 +30,8 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
     <ProductCardContainer>
       <img src={imageUrl} alt={`${name}`} />
       <Footer>
-        <Name className="name">{name}</Name>
-        <Price className="price">{price}</Price>
+        <Name>{name}</Name>
+        <Price>${price}</Price>
       </Footer>
       <Button
         isLoading={false}

@@ -14,6 +14,11 @@ export const NavigationContainer = styled.div`
     padding: 1rem 2rem;
     margin-bottom: 2rem;
   }
+
+  // Below 400px
+  @media screen and (max-width: 25em) {
+    padding: 1rem 0;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
